@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .App {
+    @apply flex items-center justify-center min-h-full dark:bg-gray-800 transition duration-500 min-w-full;
+  }
+  .home-main {
+    @apply h-screen items-center justify-center flex;
+  }
+  .container-home-main {
+    @apply mx-auto max-w-7xl w-full pt-16 pb-20 text-center lg:py-48 lg:text-left;
+  }
+  .headings-home-main {
+    @apply px-4 lg:w-1/2 sm:px-8 xl:pr-16;
+  }
+  .heading-home-h1 {
+    @apply text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl dark:text-white;
+  }
+  .heading-home-span {
+    @apply block xl:inline;
+  }
+  .heading-home-span-indigo {
+    @apply block text-indigo-600 dark:text-indigo-500 xl:inline;
+  }
+  .heading-home-paragraph {
+    @apply mt-3 max-w-md mx-auto text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl dark:text-white;
+  }
+  .heading-buttons {
+    @apply mt-10 sm:flex sm:justify-center lg:justify-start;
+  }
+  .heading-buttons-container {
+    @apply rounded-md shadow;
+  }
+  .heading-button-primary {
+    @apply w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-500 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10;
+  }
+  .heading-button-secondary-container {
+    @apply mt-3 rounded-md shadow sm:mt-0 sm:ml-3;
+  }
+  .heading-button-secondary {
+    @apply w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-500 bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10;
+  }
+  .heading-image-container {
+    @apply lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2;
+  }
+  .heading-image {
+    @apply h-56 w-full object-contain object-right sm:h-72 md:h-96 lg:w-full lg:h-full;
+  }
+  .works-main-container {
+    @apply justify-center h-screen;
+  }
+  .display-switch-button {
+    @apply fixed top-4 right-5 z-20 w-10 h-10 bg-indigo-500 hover:bg-indigo-700 rounded-full shadow-lg cursor-pointer text-white flex items-center justify-center;
+  }
+  .works-heading-container {
+    @apply mx-auto max-w-7xl px-4 sm:mt-24 sm:px-6;
+  }
+  .works-heading-text-container {
+    @apply text-center;
+  }
+  .works-heading-primary {
+    @apply mt-48 text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl dark:text-white;
+  }
+  .works-heading-primary-span {
+    @apply text-indigo-600;
+  }
+  .works-heading-secondary {
+    @apply mt-3 mb-8  max-w-md mx-auto text-base text-gray-500 dark:text-gray-50 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl;
+  }
+  .works-list-container {
+    @apply max-w-xl mx-auto px-4 mt-8 sm:px-6 lg:max-w-3xl text-center lg:px-8;
+  }
+  .works-list-margin {
+    @apply mt-5;
+  }
+  .works-list-title {
+    @apply text-lg leading-6 font-medium mb-4 text-gray-900 dark:text-gray-100 text-center;
+  }
+  .works-cards-container {
+    @apply md:grid md:grid-cols-3 md:gap-8 mx-8;
+  }
+  .works-cards-heading {
+    @apply text-lg leading-6 font-medium text-gray-900 dark:text-gray-100;
+  }
+  .works-cards-secondary {
+    @apply mt-2 text-base text-gray-500 dark:text-gray-200;
+  }
+  .about-main-container {
+    @apply py-12 overflow-hidden md:py-20 lg:py-24 h-screen flex items-center justify-center;
+  }
+  .about-main-secondary-container {
+    @apply relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  .about-main-text {
+    @apply max-w-3xl mx-auto text-2xl leading-9 font-medium text-gray-900 dark:text-white text-justify;
+  }
+  .about-signature-container {
+    @apply md:flex md:items-center md:justify-center;
+  }
+  .about-signature-image {
+    @apply mx-auto h-14 w-14 mb-6 rounded-full;
+  }
+  .about-signature-text-container {
+    @apply mt-5 text-center md:mt-0 md:ml-4 md:flex md:items-center;
+  }
+  .about-signature-text {
+    @apply text-base font-medium text-gray-900 dark:text-white;
+  }
+  .about-signature-text-secondary {
+    @apply text-base font-medium text-gray-500 dark:text-white;
+  }
+  .nav-main {
+    @apply fixed top-0 w-full p-5 shadow z-10;
+  }
+  .nav-main-ul {
+    @apply flex items-center justify-between h-8 w-5/12	mx-auto;
+  }
+  .nav-list-item {
+    @apply dark:text-white hover:border-indigo-500 text-gray-500 inline-flex items-center px-1 pt-1 text-xl hover:text-gray-900;
+  }
+  .nav-darkmode-toggle {
+    @apply w-10 h-10 bg-indigo-500 hover:bg-indigo-700 rounded-full shadow-lg cursor-pointer text-white flex items-center justify-center;
+  }
+  .studycase-container {
+    @apply w-6/12 mx-auto;
+  }
+  .studycase-clientname {
+    @apply text-2xl mt-12 tracking-tight font-extrabold text-gray-900 sm:text-3xl md:text-4xl dark:text-white text-center;
+  }
+  .studycase-title {
+    @apply text-center text-xl tracking-tight font-bold text-gray-600 sm:text-2xl dark:text-white;
+  }
+  .studycase-details {
+    @apply text-center text-lg mt-4 tracking-tight text-gray-600 sm:text-xl dark:text-white;
+  }
+  .footer-main {
+    @apply text-center dark:bg-gray-800 transition duration-500;
+  }
+  .footer-container {
+    @apply max-w-full px-4 sm:px-6 mx-auto lg:px-8 h-10;
+  }
+  .footer-text {
+    @apply text-center text-base text-gray-400 dark:text-white;
+  }
+}
