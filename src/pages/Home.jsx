@@ -33,7 +33,7 @@ const Home = () => {
       </div>
       <div className="heading-image-container">
         <img
-          class="heading-image"
+          class="heading-image w-8/12	"
           src={
             "https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/07/11/11/harold-0.jpg"
           }

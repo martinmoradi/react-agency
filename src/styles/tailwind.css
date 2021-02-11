@@ -46,7 +46,7 @@
     @apply lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2;
   }
   .heading-image {
-    @apply h-56 w-full object-contain object-right sm:h-72 md:h-96 lg:w-full lg:h-full;
+    @apply h-56 w-full object-contain object-right sm:h-72 md:h-96 lg:w-5/12 lg:h-5/12;
   }
   .works-main-container {
     @apply justify-center h-screen;
